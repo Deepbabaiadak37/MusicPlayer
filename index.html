@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Music Player</title>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<style>
+    .song {
+        margin-bottom: 10px;
+    }
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            
+            <h5><center><img class="mx-2" src="https://cdn-icons-png.flaticon.com/128/2829/2829075.png" height="38" width="38"/>Cutie Player</center></h5>
+        </a>
+    </nav>
+    <div class="container">
+        
+        
+        <div id="playlist" class="container mt-3">
+            <center>
+                <div class="card mt-2" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title" style="background-color: cadetblue;padding: 4px;border-radius: 10px;color: white;">Song 1</h5>
+                      <div class="song">
+                        <button class="btn btn-primary playpause" onclick="playPause('audio1')">Play</button>
+                        <audio id="audio1" src="song1.aac"></audio>
+                        <button class="btn btn-danger stop" onclick="stop('audio1')">Stop</button>
+                    </div>
+                    </div>
+                  </div>
+
+                  <div class="card mt-2" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title" style="background-color: cadetblue;padding: 4px;border-radius: 10px;color: white;">Song 2</h5>
+                      <div class="song">
+                        <button class="btn btn-primary playpause" onclick="playPause('audio2')">Play</button>
+                        <audio id="audio2" src="song2.aac"></audio>
+                        <button class="btn btn-danger stop" onclick="stop('audio2')">Stop</button>
+                    </div>
+                    </div>
+                  </div>
+
+                  <div class="card mt-2" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title" style="background-color: cadetblue;padding: 4px;border-radius: 10px;color: white;">Song 3</h5>
+                      <div class="song">
+                        <button class="btn btn-primary playpause" onclick="playPause('audio3')">Play</button>
+                        <audio id="audio3" src="song3.aac"></audio>
+                        <button class="btn btn-danger stop" onclick="stop('audio3')">Stop</button>
+                    </div>
+                    </div>
+                  </div>
+                
+
+                  <div class="card mt-2" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title" style="background-color: cadetblue;padding: 4px;border-radius: 10px;color: white;">Song 4</h5>
+                      <div class="song">
+                        <button class="btn btn-primary playpause" onclick="playPause('audio4')">Play</button>
+                        <audio id="audio4" src="song4.aac"></audio>
+                        <button class="btn btn-danger stop" onclick="stop('audio4')">Stop</button>
+                    </div>
+                    </div>
+                  </div>
+
+                  <div class="card mt-2" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title" style="background-color: cadetblue;padding: 4px;border-radius: 10px;color: white;">Song 5</h5>
+                      <div class="song">
+                        <button class="btn btn-primary playpause" onclick="playPause('audio5')">Play</button>
+                        <audio id="audio5" src="song5.aac"></audio>
+                        <button class="btn btn-danger stop" onclick="stop('audio5')">Stop</button>
+                    </div>
+                    </div>
+                  </div>
+
+                  <div class="card mt-2" style="width: 18rem;">
+                    <div class="card-body" >
+                      <h5 class="card-title" style="background-color: cadetblue;padding: 4px;border-radius: 10px;color: white;">Song 6</h5>
+                      <div class="song">
+                        <button class="btn btn-primary playpause" onclick="playPause('audio6')">Play</button>
+                        <audio id="audio6" src="song6.aac"></audio>
+                        <button class="btn btn-danger stop" onclick="stop('audio6')">Stop</button>
+                    </div>
+                    </div>
+                  </div>
+
+                  <div class="card mt-2" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title" style="background-color: cadetblue;padding: 4px;border-radius: 10px;color: white;">Song 7</h5>
+                      <div class="song">
+                        <button class="btn btn-primary playpause" onclick="playPause('audio7')">Play</button>
+                        <audio id="audio7" src="song7.aac"></audio>
+                        <button class="btn btn-danger stop" onclick="stop('audio7')">Stop</button>
+                    </div>
+                    </div>
+                  </div>
+
+                  <div class="card mt-2" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title" style="background-color: cadetblue;padding: 4px;border-radius: 10px;color: white;">Song 8</h5>
+                      <div class="song">
+                        <button class="btn btn-primary playpause" onclick="playPause('audio8')">Play</button>
+                        <audio id="audio8" src="song8.aac"></audio>
+                        <button class="btn btn-danger stop" onclick="stop('audio8')">Stop</button>
+                    </div>
+                    </div>
+                  </div>
+
+                  <div class="card mt-2" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title" style="background-color: cadetblue;padding: 4px;border-radius: 10px;color: white;">Song 9</h5>
+                      <div class="song">
+                        <button class="btn btn-primary playpause" onclick="playPause('audio9')">Play</button>
+                        <audio id="audio9" src="song9.aac"></audio>
+                        <button class="btn btn-danger stop" onclick="stop('audio9')">Stop</button>
+                    </div>
+                    </div>
+                  </div>
+
+                  <div class="card mt-2" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title" style="background-color: cadetblue;padding: 4px;border-radius: 10px;color: white;">Song 10</h5>
+                      <div class="song">
+                        <button class="btn btn-primary playpause" onclick="playPause('audio10')">Play</button>
+                        <audio id="audio10" src="song10.aac"></audio>
+                        <button class="btn btn-danger stop" onclick="stop('audio10')">Stop</button>
+                    </div>
+                    </div>
+                  </div>
+                
+
+            </center>
+            
+            <!-- Add more songs as needed -->
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        var currentAudio = null;
+
+        function playPause(id) {
+            var audio = document.getElementById(id);
+            var playPauseButton = audio.previousElementSibling;
+            
+            if (audio.paused) {
+                if (currentAudio && currentAudio !== audio) {
+                    currentAudio.pause();
+                    $(".playpause").text('Play');
+                }
+                audio.play();
+                $(playPauseButton).text('Pause');
+                currentAudio = audio;
+            } else {
+                audio.pause();
+                $(playPauseButton).text('Play');
+                currentAudio = null;
+            }
+        }
+
+        function stop(id) {
+            var audio = document.getElementById(id);
+            audio.pause();
+            audio.currentTime = 0;
+            $(".playpause").text('Play');
+            currentAudio = null;
+        }
+
+        function cancel(id) {
+            var audio = document.getElementById(id);
+            audio.pause();
+            audio.currentTime = 0;
+            $(".playpause").text('Play');
+            currentAudio = null;
+            audio.load();
+        }
+    </script>
+</body>
+</html>
